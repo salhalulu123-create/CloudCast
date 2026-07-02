@@ -1,6 +1,9 @@
 package com.busaradigital.cloudcast;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,12 @@ public class SplashyActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Transition to LoginActivity after 3 seconds
+        new Handler(Looper.getMainLooper()).postDelayed(() -> {
+            Intent intent = new Intent(SplashyActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }, 3000);
     }
 }
