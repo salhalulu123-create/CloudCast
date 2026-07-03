@@ -35,14 +35,5 @@ public class WeatherDetailsActivity extends AppCompatActivity {
         if (btnBack != null) {
             btnBack.setOnClickListener(v -> finish());
         }
-
-        // Delete button listener (optional, but good for UX)
-        View btnDelete = findViewById(R.id.btn_delete);
-        if (btnDelete != null) {
-            btnDelete.setOnClickListener(v -> {
-                // For now, just finish and go back
-                finish();
-            });
-        }
     }
 }
