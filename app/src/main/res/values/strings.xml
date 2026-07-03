@@ -29,4 +29,5 @@
     <string name="btn_delete_record">Delete</string>
     <string name="label_coordinates">Coordinates</string>
     <string name="sample_coordinates">-6.7915, 39.2158</string>
+    <string name="cv_history_item">View detail</string>
 </resources>
